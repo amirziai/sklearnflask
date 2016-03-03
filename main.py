@@ -11,7 +11,7 @@ from sklearn.externals import joblib
 app = Flask(__name__)
 
 # inputs
-training_data = '/Users/amirziai/Downloads/titanic.csv'
+training_data = 'data/titanic.csv'
 include = ['Age', 'Sex', 'Embarked', 'Survived']
 dependent_variable = include[-1]
 
