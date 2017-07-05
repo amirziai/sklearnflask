@@ -31,9 +31,9 @@ def predict():
             json_ = request.json
             query = pd.get_dummies(pd.DataFrame(json_))
 
-            for col in model_columns:
-                if col not in query.columns:
-                    query[col] = 0
+            # https://github.com/amirziai/sklearnflask/issues/3
+            # Thanks to @lorenzori
+            query = query.reindex(columns=model_columns, fill_value=0)
 
             prediction = list(clf.predict(query))
 
