@@ -13,6 +13,11 @@ Read more in [this blog post](https://medium.com/@amirziai/a-flask-api-for-servi
 pip install -r requirements.txt
 ```
 
+### Running API
+```
+python2 main.py 9999
+```
+
 # Endpoints
 ### /predict (POST)
 Returns an array of predictions given a JSON object representing independent variables. Here's a sample input:
