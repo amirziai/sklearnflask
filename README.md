@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 ### Running API
 ```
-python2 main.py <port>
+python main.py <port>
 ```
 
 # Endpoints
@@ -23,7 +23,7 @@ python2 main.py <port>
 Returns an array of predictions given a JSON object representing independent variables. Here's a sample input:
 ```
 [
-	{'Age': 85, 'Sex': 'male', 'Embarked': 'S'},
+    {'Age': 85, 'Sex': 'male', 'Embarked': 'S'},
     {'Age': 24, 'Sex': 'female', 'Embarked': 'C'},
     {'Age': 3, 'Sex': 'male', 'Embarked': 'C'},
     {'Age': 21, 'Sex': 'male', 'Embarked': 'S'}
