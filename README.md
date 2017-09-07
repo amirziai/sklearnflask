@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 ### Running API
 ```
-python2 main.py 9999
+python2 main.py <port>
 ```
 
 # Endpoints
