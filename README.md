@@ -23,16 +23,16 @@ python main.py <port>
 Returns an array of predictions given a JSON object representing independent variables. Here's a sample input:
 ```
 [
-    {'Age': 85, 'Sex': 'male', 'Embarked': 'S'},
-    {'Age': 24, 'Sex': 'female', 'Embarked': 'C'},
-    {'Age': 3, 'Sex': 'male', 'Embarked': 'C'},
-    {'Age': 21, 'Sex': 'male', 'Embarked': 'S'}
+    {"Age": 85, "Sex": "male", "Embarked": "S"},
+    {"Age": 24, "Sex": '"female"', "Embarked": "C"},
+    {"Age": 3, "Sex": "male", "Embarked": "C"},
+    {"Age": 21, "Sex": "male", "Embarked": "S"}
 ]
 ```
 
 and sample output:
 ```
-{'prediction': [0, 1, 1, 0]}
+{"prediction": [0, 1, 1, 0]}
 ```
 
 
